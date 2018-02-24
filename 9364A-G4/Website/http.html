@@ -10,10 +10,38 @@
 
 <body>
     <h1>HTTP</h1>
-    <p><li>A protocol which use to communicate with the requrest of the client to the server and how the server will response.</li></p>
-    <p><li>Application layer communications protocol used to access resources on the WWW.</li></p>
+    <p>
+        <li>A protocol which use to communicate with the requrest of the client to the server and how the server will response.</li>
+    </p>
+    <p>
+        <li>Application layer communications protocol used to access resources on the WWW.</li>
+    </p>
 
     <h2>HTTP Stateless</h2>
+    <ul>
+        <p>
+            <li>Server do not keep information about client in-between request</li>
+        </p>
+    </ul>
+
+    <h2>HTTP provides support for other functionalities</h2>
+    <ul>
+        <li>Cache control</li>
+        <li>Content media type (MIME) specifications</li>
+        <li>Language and character set specifications</li>
+        <ul>
+            <li>Other extended characters</li>
+        </ul>
+        <li>Content/transfer coding</li>
+        <ul>
+            <li>chunk details body,header</li>
+        </ul>
+        <li>Content negotiation</li>
+        <li>Client Sever protocol negotiation</li>
+        <li>Persistent connectcions</li>
+        <li>Request pipelining/multiplexing</li>
+        <li>Authentication/authorization</li>
+    </ul>
     <h2>HTTP Resources</h2>
     <p>Identifies using URIs</p>
     Parts:
@@ -36,47 +64,98 @@
     </ul>
 
     <h2>HTTP Request Message</h2>
+    <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html</a>
     <ul>
         <li>Request Line</li>
+        <ul>
+            <li>Method</li>
+            <li>Request Target</li>
+            <li>Protocol Versions</li>
+        </ul>
         <li>Message headers</li>
+        <ul>
+            <p>
+                <li>HTTP 1.1 requires atleast the HOST request header to be provided</li>
+            </p>
+        </ul>
         <li>Empty Line</li>
+        <ul>
+            <p>
+                <li>To show you are done with message headers</li>
+            </p>
+        </ul>
         <li>Message body a.k.a payload</li>
     </ul>
 
     <h2>HTTP Response</h2>
+    <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html</a>
     <ul>
+        <li>HTTP Response is similar with request message but instead of Request Line, it is called <b>Static Line</b></li>
         <li>Static line</li>
+        <ul>
+            <li>Protocol Versions</li>
+            <li>Status Code</li>
+            <li>Reason Phase</li>
+        </ul>
         <li>Message headers</li>
         <li>Empty Line</li>
         <li>Message body a.k.a payload</li>
     </ul>
 
-    
+
     <h2>HTTP Request Methods</h2>
 
     <h3>Get</h3>
-    <p><li>Most commonly used method.</li></p>
-    <p><li>Get the message body.</li></p>
-    
+    <p>
+        <li>Most commonly used method.</li>
+    </p>
+    <p>
+        <li>Get the message body.</li>
+    </p>
+
     <h3>Head</h3>
-    <p><li>Identical to <b>GET</b>, except that the server does not send message body.</li></p>
-    <p><li>Only get the header information, used to retrieve metadata.</li></p>
+    <p>
+        <li>Identical to <b>GET</b>, except that the server does not send message body.</li>
+    </p>
+    <p>
+        <li>Only get the header information, used to retrieve metadata.</li>
+    </p>
     <h3>Post</h3>
-    <p><li>Same us <b>GET</b> method.</li></p>
-    <p><li>Used in submitting HTML form data</li></p>
-    <p><li>Data that submit is now in the body</li></p>
+    <p>
+        <li>Same us <b>GET</b> method.</li>
+    </p>
+    <p>
+        <li>Used in submitting HTML form data</li>
+    </p>
+    <p>
+        <li>Data that submit is now in the body</li>
+    </p>
     <h3>PUT</h3>
-    <p><li>Create or replace.</li></p>
+    <p>
+        <li>Create or replace.</li>
+    </p>
     <h3>Delete</h3>
-    <p><li>Remove the association between the target.</li></p>
+    <p>
+        <li>Remove the association between the target.</li>
+    </p>
     <h3>Options</h3>
-    <p><li>Options available for the target resource.</li></p>
-    <p><li>Inquiring the available methods that can be use.</li></p>
+    <p>
+        <li>Options available for the target resource.</li>
+    </p>
+    <p>
+        <li>Inquiring the available methods that can be use.</li>
+    </p>
     <h3>Trace</h3>
-    <p><li>Request a remote, application-level loop-back of the request message</li></p>
-    <p><li>Logically used for <b>testing</b>.</li></p>
+    <p>
+        <li>Request a remote, application-level loop-back of the request message</li>
+    </p>
+    <p>
+        <li>Logically used for <b>testing</b>.</li>
+    </p>
     <h3>Connect</h3>
-    <p><li>Request the established of a tunnel.</li></p>
+    <p>
+        <li>Request the established of a tunnel.</li>
+    </p>
 
     <h2>Methods Properties</h2>
     <h3>Safe Methods</h3>
@@ -112,10 +191,89 @@
     <p>3 digit numbers</p>
     <ol>
         <li>Informational (1XX)</li>
+        <ul>
+            <p>
+                <li>Server is thinking throught the request</li>
+            </p>
+            <li>List of 100: </li>
+            <ul>
+                <li>100 Continue</li>
+                <li>101 Switching Protocols</li>
+            </ul>
+        </ul>
         <li>Success (2XX)</li>
+        <ul>
+            <p>
+                <li>Client's request was successfully received.</li>
+            </p>
+            <li>List of 200: </li>
+            <ul>
+                <li>200 Ok</li>
+                <li>201 Created</li>
+                <li>202 Accepted</li>
+                <li>203 Non-Authoritative Information</li>
+                <li>204 No Conent</li>
+                <li>205 Reset Content</li>
+                <li>206 Partial Content</li>
+            </ul>
+        </ul>
         <li>Redirection (3XX)</li>
+        <ul>
+            <p>
+                <li>Further action needs to be taken by the</li>
+            </p>
+            <li>List of 300: </li>
+            <ul>
+                <li>300 Multiple Choices</li>
+                <li>301 Moved Permanently</li>
+                <li>302 Found</li>
+                <li>303 See Other</li>
+                <li>304 Not Modified</li>
+                <li>305 Use Proxy</li>
+                <li>307 Temporary Redirect</li>
+            </ul>
+        </ul>
         <li>Client Error (4XX)</li>
+        <ul>
+            <p>
+                <li>The client made a mistake which lead to an error.</li>
+            </p>
+            <ul>
+                <li>400 Bad Request</li>
+                <li>401 Unauthorized</li>
+                <li>402 Payment Required</li>
+                <li>403 Forbidden</li>
+                <li>404 Not Found</li>
+                <li>405 Method Not Allowed</li>
+                <li>406 Not Acceptable</li>
+                <li>407 Proxy Authentication Required</li>
+                <li>408 Request Time-out</li>
+                <li>409 Conflict</li>
+                <li>410 Gone</li>
+                <li>411 Length Required</li>
+                <li>412 Precondition Failed</li>
+                <li>413 Request Entity Too Large</li>
+                <li>414 Request-URI Too Long</li>
+                <li>415 Unsupported Media Type</li>
+                <li>416 Request Range Not Satisfiable</li>
+                <li>417 Expectation Failed</li>
+            </ul>
+        </ul>
         <li>Server Error (5XX)</li>
+        <ul>
+            <p>
+                <li>The server failed to complete the request</li>
+            </p>
+            <li>List of 500: </li>
+            <ul>
+                <li>500 Internal Server Error</li>
+                <li>501 Not Implemented</li>
+                <li>502 Bad Gateway</li>
+                <li>503 Service Unavailable</li>
+                <li>504 Gateway Time-out</li>
+                <li>505 HTTP Version Not Supported</li>
+            </ul>
+        </ul>
     </ol>
 </body>
 
