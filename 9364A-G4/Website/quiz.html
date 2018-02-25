@@ -1,274 +1,297 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
+    <head>
+        <title>Quiz</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <link rel="stylesheet" href="">
-</head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">.
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+                </div>
 
-<body>
-    <script src="./script/script.js"></script>
-    <div id = "result">
-        
-    </div>
-    <div id = "correctanswer">
-        
-    </div>
-    <form name="quiz">
-        <ol>
-            <div class="Question">
-                <h2>
-                    <li class="qTitle">It is a collection of web resources and application</li>
-                </h2>
-                <p><input type="radio" name="q1" value="a">a. HTTP</p>
-                <p><input type="radio" name="q1" value="b">b. WWW</p>
-                <p><input type="radio" name="q1" value="c">c. HTML</p>
-            </div>
-
-            <div class="Question">
-                <h2>
-                    <li class="qTitle">Use to access the web resources via ________.</li>
-                </h2>
-                <p><input type="radio" name="q2" value="a">a. Browser</p>
-                <p><input type="radio" name="q2" value="b">b. Internet</p>
-                <p><input type="radio" name="q2" value="c">c. HTTP</p>
-            </div>
-
-            <div class="Question">
-                <h2>
-                    <li>Web application that crawl to collect information.</li>
-                </h2>
-                <p><input type="radio" name="q3" value="a">a. WAIS</p>
-                <p><input type="radio" name="q3" value="b">b. Fiddler</p>
-                <p><input type="radio" name="q3" value="c">c. Spider</p>
-            </div>
-
-            <div class="Question">
-                <h2>
-                    <li>A protocol which use to communicate with the requrest of the client to the server and how the server will response.</li>
-                </h2>
-                <p><input type="radio" name="q4" value="a">a. HTTP</p>
-                <p><input type="radio" name="q4" value="b">b. Internet Protocol</p>
-                <p><input type="radio" name="q4" value="c">c. </p>
-            </div>
-
-            <div class="Question">
-                <h2>
-                    <li>He is the father of the web.</li>
-                </h2>
-                <p><input type="radio" name="q5" value="a">a. Tim Berners Lee</p>
-                <p><input type="radio" name="q5" value="b">b. Dave Raggett</p>
-                <p><input type="radio" name="q5" value="c">c. Dan Connoly</p>
-            </div>
-
-            <div class="method">
-                <h2>HTTP Method Request</h2>
-                <div class="Question">
-                    <h3>
-                        <li>Remove the association between the target</li>
-                    </h3>
-                    <select name="q6">
-                    <option value = "a">Get</option>
-                    <option value = "b">Head</option>
-                    <option value = "c">Post</option>
-                    <option value = "d">Put</option>
-                    <option value = "e">Delete</option>
-                    <option value = "f">Options</option>
-                    <option value = "g">Trace</option>
-                    <option value = "h">Connect</option>
-                </select>
-
-                    <h3>
-                        <li>Logically used for testing</li>
-                    </h3>
-                    <select name="q7">
-                    <option value = "a">Get</option>
-                    <option value = "b">Head</option>
-                    <option value = "c">Post</option>
-                    <option value = "d">Put</option>
-                    <option value = "e">Delete</option>
-                    <option value = "f">Options</option>
-                    <option value = "g">Trace</option>
-                    <option value = "h">Connect</option>
-                </select>
-
-                    <h3>
-                        <li>Request the established of a tunnel</li>
-                    </h3>
-                    <select name="q8">
-                    <option value = "a">Get</option>
-                    <option value = "b">Head</option>
-                    <option value = "c">Post</option>
-                    <option value = "d">Put</option>
-                    <option value = "e">Delete</option>
-                    <option value = "f">Options</option>
-                    <option value = "g">Trace</option>
-                    <option value = "h">Connect</option>
-                </select>
-
-
-                    <h3>
-                        <li>Inquiring the available methods that can be use.</li>
-                    </h3>
-                    <select name="q9">
-                    <option value = "a">Get</option>
-                    <option value = "b">Head</option>
-                    <option value = "c">Post</option>
-                    <option value = "d">Put</option>
-                    <option value = "e">Delete</option>
-                    <option value = "f">Options</option>
-                    <option value = "g">Trace</option>
-                    <option value = "h">Connect</option>
-                </select>
-
-                    <h3>
-                        <li>Used in submitting HTML form data.</li>
-                    </h3>
-                    <select name="q10">
-                    <option value = "a">Get</option>
-                    <option value = "b">Head</option>
-                    <option value = "c">Post</option>
-                    <option value = "d">Put</option>
-                    <option value = "e">Delete</option>
-                    <option value = "f">Options</option>
-                    <option value = "g">Trace</option>
-                    <option value = "h">Connect</option>
-                </select>
-
-                    <h3>
-                        <li>Most commonly used method.</li>
-                    </h3>
-                    <select name="q11">
-                    <option value = "a">Get</option>
-                    <option value = "b">Head</option>
-                    <option value = "c">Post</option>
-                    <option value = "d">Put</option>
-                    <option value = "e">Delete</option>
-                    <option value = "f">Options</option>
-                    <option value = "g">Trace</option>
-                    <option value = "h">Connect</option>
-                </select>
-
-                    <h3>
-                        <li>Identical to GET, except that the server does not send message body</li>
-                    </h3>
-                    <select name="q12">
-                    <option value = "a">Get</option>
-                    <option value = "b">Head</option>
-                    <option value = "c">Post</option>
-                    <option value = "d">Put</option>
-                    <option value = "e">Delete</option>
-                    <option value = "f">Options</option>
-                    <option value = "g">Trace</option>
-                    <option value = "h">Connect</option>
-                </select>
-
-                    <h3>
-                        <li>This method is used to create and replace.</li>
-                    </h3>
-                    <select name="q13">
-                    <option value = "a">Get</option>
-                    <option value = "b">Head</option>
-                    <option value = "c">Post</option>
-                    <option value = "d">Put</option>
-                    <option value = "e">Delete</option>
-                    <option value = "f">Options</option>
-                    <option value = "g">Trace</option>
-                    <option value = "h">Connect</option>
-                </select>
-
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html"> HOME </a></li>
+                        <li><a href="html.html"> HTML </a></li>
+                        <li><a href="http.html"> HTTP </a></li>
+                        <li><a href="quiz.html"> QUIZ </a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+        <script src="./script/script.js"></script>
+        <div id = "result">
 
-            <div class="Question">
-                <h2>
-                    <li>It is a method property which in client does not expect change.</li>
-                </h2>
-                <p><input type="radio" name="q14" value="a">a. Safe Methods</p>
-                <p><input type="radio" name="q14" value="b">b. Indepotent Methods</p>
-                <p><input type="radio" name="q14" value="c">c. Cacheable Methods</p>
-            </div>
+        </div>
+        <div id = "correctanswer">
 
-            <div class="Question">
-                <h2>
-                    <li>Indicates the response to a method is doved to be store for future reuse.</li>
-                </h2>
-                <p><input type="radio" name="q15" value="a">a. Safe Methods</p>
-                <p><input type="radio" name="q15" value="b">b. Indepotent Methods</p>
-                <p><input type="radio" name="q15" value="c">c. Cacheable Methods</p>
-            </div>
+        </div>
+        <form name="quiz">
+            <ol>
+                <div class="Question">
+                    <h2>
+                        <li class="qTitle">It is a collection of web resources and application</li>
+                    </h2>
+                    <p><input type="radio" name="q1" value="a">a. HTTP</p>
+                    <p><input type="radio" name="q1" value="b">b. WWW</p>
+                    <p><input type="radio" name="q1" value="c">c. HTML</p>
+                </div>
 
-            <div class="Question">
-                <h2>
-                    <li>Intended effect on the server with the method is the same as the effect of a single request.</li>
-                </h2>
-                <p><input type="radio" name="q16" value="a">a. Safe Methods</p>
-                <p><input type="radio" name="q16" value="b">b. Indepotent Methods</p>
-                <p><input type="radio" name="q16" value="c">c. Cacheable Methods</p>
-            </div>
+                <div class="Question">
+                    <h2>
+                        <li class="qTitle">Use to access the web resources via ________.</li>
+                    </h2>
+                    <p><input type="radio" name="q2" value="a">a. Browser</p>
+                    <p><input type="radio" name="q2" value="b">b. Internet</p>
+                    <p><input type="radio" name="q2" value="c">c. HTTP</p>
+                </div>
 
-            <h2> HTTP Status Code</h2>
-            <h3>
-                <li>Client's request was successfully received.</li>
-            </h3>
-            <select name="q17">
-                    <option value = "a">Informational (1XX)</option>
-                    <option value = "b">Success (2XX)</option>
-                    <option value = "c">Redirection (3XX)</option>
-                    <option value = "d">Client Error (4XX)</option>
-                    <option value = "e">Server Error (5XX)</option>
-                </select>
+                <div class="Question">
+                    <h2>
+                        <li>Web application that crawl to collect information.</li>
+                    </h2>
+                    <p><input type="radio" name="q3" value="a">a. WAIS</p>
+                    <p><input type="radio" name="q3" value="b">b. Fiddler</p>
+                    <p><input type="radio" name="q3" value="c">c. Spider</p>
+                </div>
 
-            <h3>
-                <li>The client made a mistake which lead to an error.</li>
-            </h3>
-            <select name="q18">
-                    <option value = "a">Informational (1XX)</option>
-                    <option value = "b">Success (2XX)</option>
-                    <option value = "c">Redirection (3XX)</option>
-                    <option value = "d">Client Error (4XX)</option>
-                    <option value = "e">Server Error (5XX)</option>
-                </select>
+                <div class="Question">
+                    <h2>
+                        <li>A protocol which use to communicate with the requrest of the client to the server and how the server will response.</li>
+                    </h2>
+                    <p><input type="radio" name="q4" value="a">a. HTTP</p>
+                    <p><input type="radio" name="q4" value="b">b. Internet Protocol</p>
+                    <p><input type="radio" name="q4" value="c">c. </p>
+                </div>
 
-            <h3>
-                <li>The server failed to complete the request</li>
-            </h3>
-            <select name="q19">
-                    <option value = "a">Informational (1XX)</option>
-                    <option value = "b">Success (2XX)</option>
-                    <option value = "c">Redirection (3XX)</option>
-                    <option value = "d">Client Error (4XX)</option>
-                    <option value = "e">Server Error (5XX)</option>
-                </select>
+                <div class="Question">
+                    <h2>
+                        <li>He is the father of the web.</li>
+                    </h2>
+                    <p><input type="radio" name="q5" value="a">a. Tim Berners Lee</p>
+                    <p><input type="radio" name="q5" value="b">b. Dave Raggett</p>
+                    <p><input type="radio" name="q5" value="c">c. Dan Connoly</p>
+                </div>
 
-            <h3>
-                <li>Redirect the client to another domain.</li>
-            </h3>
-            <select name="q20">
-                    <option value = "a">Informational (1XX)</option>
-                    <option value = "b">Success (2XX)</option>
-                    <option value = "c">Redirection (3XX)</option>
-                    <option value = "d">Client Error (4XX)</option>
-                    <option value = "e">Server Error (5XX)</option>
-                </select>
+                <div class="method">
+                    <h2>HTTP Method Request</h2>
+                    <div class="Question">
+                        <h3>
+                            <li>Remove the association between the target</li>
+                        </h3>
+                        <select name="q6">
+                        <option value = "a">Get</option>
+                        <option value = "b">Head</option>
+                        <option value = "c">Post</option>
+                        <option value = "d">Put</option>
+                        <option value = "e">Delete</option>
+                        <option value = "f">Options</option>
+                        <option value = "g">Trace</option>
+                        <option value = "h">Connect</option>
+                    </select>
 
-            <h3>
-                <li>Server is thinking throught the request.</li>
-            </h3>
-            <select name="q21">
-                    <option value = "a">Informational (1XX)</option>
-                    <option value = "b">Success (2XX)</option>
-                    <option value = "c">Redirection (3XX)</option>
-                    <option value = "d">Client Error (4XX)</option>
-                    <option value = "e">Server Error (5XX)</option>
-                </select>
+                        <h3>
+                            <li>Logically used for testing</li>
+                        </h3>
+                        <select name="q7">
+                        <option value = "a">Get</option>
+                        <option value = "b">Head</option>
+                        <option value = "c">Post</option>
+                        <option value = "d">Put</option>
+                        <option value = "e">Delete</option>
+                        <option value = "f">Options</option>
+                        <option value = "g">Trace</option>
+                        <option value = "h">Connect</option>
+                    </select>
 
-        </ol>
-        <button type="submit" onclick="onSubmit()">Done</button>
-        <h2 class="results"></h2>
-    </form>
-</body>
+                        <h3>
+                            <li>Request the established of a tunnel</li>
+                        </h3>
+                        <select name="q8">
+                        <option value = "a">Get</option>
+                        <option value = "b">Head</option>
+                        <option value = "c">Post</option>
+                        <option value = "d">Put</option>
+                        <option value = "e">Delete</option>
+                        <option value = "f">Options</option>
+                        <option value = "g">Trace</option>
+                        <option value = "h">Connect</option>
+                    </select>
 
+
+                        <h3>
+                            <li>Inquiring the available methods that can be use.</li>
+                        </h3>
+                        <select name="q9">
+                        <option value = "a">Get</option>
+                        <option value = "b">Head</option>
+                        <option value = "c">Post</option>
+                        <option value = "d">Put</option>
+                        <option value = "e">Delete</option>
+                        <option value = "f">Options</option>
+                        <option value = "g">Trace</option>
+                        <option value = "h">Connect</option>
+                    </select>
+
+                        <h3>
+                            <li>Used in submitting HTML form data.</li>
+                        </h3>
+                        <select name="q10">
+                        <option value = "a">Get</option>
+                        <option value = "b">Head</option>
+                        <option value = "c">Post</option>
+                        <option value = "d">Put</option>
+                        <option value = "e">Delete</option>
+                        <option value = "f">Options</option>
+                        <option value = "g">Trace</option>
+                        <option value = "h">Connect</option>
+                    </select>
+
+                        <h3>
+                            <li>Most commonly used method.</li>
+                        </h3>
+                        <select name="q11">
+                        <option value = "a">Get</option>
+                        <option value = "b">Head</option>
+                        <option value = "c">Post</option>
+                        <option value = "d">Put</option>
+                        <option value = "e">Delete</option>
+                        <option value = "f">Options</option>
+                        <option value = "g">Trace</option>
+                        <option value = "h">Connect</option>
+                    </select>
+
+                        <h3>
+                            <li>Identical to GET, except that the server does not send message body</li>
+                        </h3>
+                        <select name="q12">
+                        <option value = "a">Get</option>
+                        <option value = "b">Head</option>
+                        <option value = "c">Post</option>
+                        <option value = "d">Put</option>
+                        <option value = "e">Delete</option>
+                        <option value = "f">Options</option>
+                        <option value = "g">Trace</option>
+                        <option value = "h">Connect</option>
+                    </select>
+
+                        <h3>
+                            <li>This method is used to create and replace.</li>
+                        </h3>
+                        <select name="q13">
+                        <option value = "a">Get</option>
+                        <option value = "b">Head</option>
+                        <option value = "c">Post</option>
+                        <option value = "d">Put</option>
+                        <option value = "e">Delete</option>
+                        <option value = "f">Options</option>
+                        <option value = "g">Trace</option>
+                        <option value = "h">Connect</option>
+                    </select>
+
+                    </div>
+                </div>
+
+                <div class="Question">
+                    <h2>
+                        <li>It is a method property which in client does not expect change.</li>
+                    </h2>
+                    <p><input type="radio" name="q14" value="a">a. Safe Methods</p>
+                    <p><input type="radio" name="q14" value="b">b. Indepotent Methods</p>
+                    <p><input type="radio" name="q14" value="c">c. Cacheable Methods</p>
+                </div>
+
+                <div class="Question">
+                    <h2>
+                        <li>Indicates the response to a method is doved to be store for future reuse.</li>
+                    </h2>
+                    <p><input type="radio" name="q15" value="a">a. Safe Methods</p>
+                    <p><input type="radio" name="q15" value="b">b. Indepotent Methods</p>
+                    <p><input type="radio" name="q15" value="c">c. Cacheable Methods</p>
+                </div>
+
+                <div class="Question">
+                    <h2>
+                        <li>Intended effect on the server with the method is the same as the effect of a single request.</li>
+                    </h2>
+                    <p><input type="radio" name="q16" value="a">a. Safe Methods</p>
+                    <p><input type="radio" name="q16" value="b">b. Indepotent Methods</p>
+                    <p><input type="radio" name="q16" value="c">c. Cacheable Methods</p>
+                </div>
+
+                <h2> HTTP Status Code</h2>
+                <h3>
+                    <li>Client's request was successfully received.</li>
+                </h3>
+                <select name="q17">
+                        <option value = "a">Informational (1XX)</option>
+                        <option value = "b">Success (2XX)</option>
+                        <option value = "c">Redirection (3XX)</option>
+                        <option value = "d">Client Error (4XX)</option>
+                        <option value = "e">Server Error (5XX)</option>
+                    </select>
+
+                <h3>
+                    <li>The client made a mistake which lead to an error.</li>
+                </h3>
+                <select name="q18">
+                        <option value = "a">Informational (1XX)</option>
+                        <option value = "b">Success (2XX)</option>
+                        <option value = "c">Redirection (3XX)</option>
+                        <option value = "d">Client Error (4XX)</option>
+                        <option value = "e">Server Error (5XX)</option>
+                    </select>
+
+                <h3>
+                    <li>The server failed to complete the request</li>
+                </h3>
+                <select name="q19">
+                        <option value = "a">Informational (1XX)</option>
+                        <option value = "b">Success (2XX)</option>
+                        <option value = "c">Redirection (3XX)</option>
+                        <option value = "d">Client Error (4XX)</option>
+                        <option value = "e">Server Error (5XX)</option>
+                    </select>
+
+                <h3>
+                    <li>Redirect the client to another domain.</li>
+                </h3>
+                <select name="q20">
+                        <option value = "a">Informational (1XX)</option>
+                        <option value = "b">Success (2XX)</option>
+                        <option value = "c">Redirection (3XX)</option>
+                        <option value = "d">Client Error (4XX)</option>
+                        <option value = "e">Server Error (5XX)</option>
+                    </select>
+
+                <h3>
+                    <li>Server is thinking throught the request.</li>
+                </h3>
+                <select name="q21">
+                        <option value = "a">Informational (1XX)</option>
+                        <option value = "b">Success (2XX)</option>
+                        <option value = "c">Redirection (3XX)</option>
+                        <option value = "d">Client Error (4XX)</option>
+                        <option value = "e">Server Error (5XX)</option>
+                    </select>
+
+            </ol>
+            <button type="submit" onclick="onSubmit()">Done</button>
+            <h2 class="results"></h2>
+        </form>
+    </body>
 </html>
