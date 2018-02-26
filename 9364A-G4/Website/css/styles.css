@@ -195,3 +195,8 @@ li {
     font-family: Walkway-SemiBold;
 }
 
+.tleft{
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
