@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+@font-face{
+    font-family:Oswald-Medium;
+    src:url('../fonts/Oswald-Medium.ttf');
+}
+@font-face{
+    font-family:Walkway-SemiBold;
+    src: url('../fonts/Walkway_SemiBold.ttf');
+
+}
 
 .navbar {
     margin-bottom: 0;
