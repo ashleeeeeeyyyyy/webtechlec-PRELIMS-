@@ -82,6 +82,49 @@
     color: white;
 }
 
+.container{
+    width: 80%;
+    margin: 10px auto;
+
+}
+
+.Question{
+    margin-left: 40px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.Question h2{
+
+    width: 100%;
+    margin: 10px 0;
+}
+
+header{
+    text-align: center;
+    background: pink;
+    padding: 20px;
+}
+
+#footer{
+    font-size: 20px;
+    margin-top: 40px;
+    background: pink;
+    padding: 20px;
+}
+
+.retake{
+    float: right;
+    background: pink;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.retake:hover {
+    background: black;
+    color: white;
+
+}
 
 
     

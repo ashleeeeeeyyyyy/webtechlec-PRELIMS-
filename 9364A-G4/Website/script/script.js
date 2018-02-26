@@ -28,5 +28,7 @@ function onSubmit() {
             score++;
         }
     }
-    alert(score);
+    var results = document.getElementById("results");
+    results.innerHTML = "Score: " + score + "/" + answer.length;
+    event.preventDefault();
 }
