@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Quiz</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
 
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">.
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+<head>
+    <title>Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">.
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div class="tleft">
+                <div class="tleft">
                     <a class="navbar-brand" href="index.html"><img src="images/SCIS_logo.png" width="70" height=auto></a> </div>
-                </div>
-
-                <div class="collapse navbar-collapse" id="Navbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html"> HOME </a></li>
-                        <li><a href="html.html"> HTML </a></li>
-                        <li><a href="http.html"> HTTP </a></li>
-                        <li><a href="quiz.html"> QUIZ </a></li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-        
-        <script src="./script/script.js"></script>
-      <form name="quiz">
+
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="html.html"> HTML </a></li>
+                    <li><a href="http.html"> HTTP </a></li>
+                    <li><a href="quiz.html"> QUIZ </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="./script/script.js"></script>
+    <form name="quiz">
         <div class="container">
             <header>
                 <h1>Quiz</h1>
@@ -290,14 +291,53 @@
                     <option value = "e">Server Error (5XX)</option>
                 </select>
                 </div>
+
+                <div class="Question">
+                    <h2>
+                        <li>
+                            Used to specify the structure, content of web pages, as well their presentation.</li>
+                    </h2>
+                    <p><input type="radio" name="q22" value="a">a. HTML</p>
+                    <p><input type="radio" name="q22" value="b">b. HTTP</p>
+                    <p><input type="radio" name="q22" value="c">c. DTDs</p>
+                </div>
+
+                <div class="Question">
+                    <h2>
+                        <li>Provides hierarchical structure</li>
+                    </h2>
+                        <p><input type="radio" name="q23" value="a">a. DOM</p>
+                        <p><input type="radio" name="q23" value="b">b. XHTML</p>
+                        <p><input type="radio" name="q23" value="c">c. DTDs</p>
+                </div>
+
+                <div class="Question">
+                    <h2>
+                        <li> Reformulation of HTML in XML</li>
+                    </h2>
+
+                    <p><input type="radio" name="q24" value="a">a. HTML 5</p>
+                    <p><input type="radio" name="q24" value="b">b. XHTML</p>
+                    <p><input type="radio" name="q24" value="c">c. DOM</p>
+
+                </div>
+
+                <div class="Question">
+                    <h2>
+                        <li>The first draft of HTML 5 was published in the year _____</li>
+                    </h2>
+                        <p><input type="radio" name="q25" value="a">a. 2005</p>
+                        <p><input type="radio" name="q25" value="b">b. 2008</p>
+                        <p><input type="radio" name="q25" value="c">c. 2010</p>
+                </div>
             </ol>
-            <button type="submit" onclick="onSubmit()">Done</button>
-            <a href="quiz.html" class = "retake">Retake the quiz</a>
-            <h2 class="results"></h2>
-            <div id = "footer">
-                <p id = "results">Score: </p>
+            <button type="submit" class="btn btn-primary" onclick="onSubmit()">Done</button>
+            <button type="submit" class="btn btn-primary">Retake the quiz</button>
+            <div id="footer">
+                <p id="results">Score: </p>
             </div>
         </div>
     </form>
-    </body>
+</body>
+
 </html>

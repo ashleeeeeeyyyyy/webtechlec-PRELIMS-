@@ -1,6 +1,6 @@
 function onSubmit() {
     var score = 0;
-    var answer = ['b', 'b', 'c', 'a', 'a', 'e', 'g', 'h', 'f', 'c', 'a', 'b', 'd', 'a', 'c', 'b', 'b', 'd', 'e', 'c', 'a'];
+    var answer = ['b', 'b', 'c', 'a', 'a', 'e', 'g', 'h', 'f', 'c', 'a', 'b', 'd', 'a', 'c', 'b', 'b', 'd', 'e', 'c', 'a', 'a', 'a', 'b', 'b'];
     var q1 = document.quiz.q1.value;
     var q2 = document.quiz.q2.value;
     var q3 = document.quiz.q3.value;
@@ -22,7 +22,10 @@ function onSubmit() {
     var q19 = document.quiz.q19.value;
     var q20 = document.quiz.q20.value;
     var q21 = document.quiz.q21.value;
-
+    var q22 = document.quiz.q22.value;
+    var q23 = document.quiz.q23.value;
+    var q24 = document.quiz.q24.value;
+    var q25 = document.quiz.q25.value;
     for (var i = 1; i <= answer.length; i++) {
         if (eval('q' + i) == answer[i - 1]) {
             score++;
