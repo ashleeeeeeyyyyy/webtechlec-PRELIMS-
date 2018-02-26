@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="en">   
+    <head> 
         <title>Introduction to HTML</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +20,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div class="tleft">
-                    <a class="navbar-brand" href="index.html"><img src="images/SCIS_logo.png" width="70" height=auto></a> </div>
+                    <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
                 </div>
                 
                 <div class="collapse navbar-collapse" id="Navbar">
@@ -35,16 +34,16 @@
             </div>
         </nav>
         
-        <div id="myCarousel" class="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="images/slider1.jpg" class="img-responsive" style="width: 100%; height: 850px;">
+            </ol>        
+        
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/slider1.jpg" class="img-responsive" style="width: 100%; height: 850px;">
                 </div>
                 
                 <div class="item">
@@ -65,12 +64,142 @@
             </a>            
         </div>
         
-        <h1>HTML (Hypertext Markup Language)</h1>
-        <p>
-            <li>Language used to mark up documents(i.e web sites) in the world wide web.</li>
-        </p>
-        <p>
-            <li>Historically used to specify the structure & content of web pages, as well as their presentation</li>
-        </p>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <button type="button" class="btn btn-danger btn-lg btn-block" data-toggle="collapse" data-target="#content1" style="margin: 5px; font-size 30px;"> HTML (Hypertext Markup Language) </button>
+                    <div class="collapse" id="content1">
+                        <div class="well">
+                            <h1>HTML (Hypertext Markup Language)</h1>
+                            <p>
+                                <li>Language used to mark up documents(i.e web sites) in the world wide web.</li>
+                            </p>
+                            <p>
+                                <li>Historically used to specify the structure & content of web pages, as well as their presentation</li>
+                            </p>
+                            <p>
+                                <li>Tim Berners-Lee was the primary author of HTML</li>
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div>
+                    <button type="button" class="btn btn-danger btn-lg btn-block" data-toggle="collapse" data-target="#content2" style="margin: 5px; font-size 30px;"> HTML Version History </button>
+                    <div class="collapse" id="content2">
+                        <div class="well">
+                            <h1>Version History</h1>
+                                <p>
+                                    <h2><li>HTML 2.0</li></h2>
+                                    <p>
+                                        <li>It is an expansion of HTML 1.0.</li>
+                                        <li>Has a form-based File upload.</li>
+                                        <li>It was released in November 25, 1995.</li>
+                                    </p>
+
+                                    <h2><li>HTML 3.2</li></h2>
+                                    <p>
+                                        <li>Has HTML 2.0 features such as tables, applets, text flow around images, superscripts and subscripts</li>
+                                        <li>Released on January 12, 1997</li>
+                                    </p>
+
+                                    <h2><li>XHTML 1.0</li></h2>
+                                    <p>
+                                        <li>A new language based on HTML 4.0 that is associated with XML.</li>
+                                        <li>Was adopted by W3C Recommendation on January 26, 2000</li>
+                                    </p>
+
+                                    <h2><li>XHTML 1.1</li></h2>
+                                    <p>
+                                        <li>It is a module-based XHTML.</li>
+                                        <li>Was adopted by W3C Recommendation on May 2001</li>
+                                    </p>
+
+                                    <h2><li>HTML5</li></h2>
+                                    <p>
+                                        <li>Evolved HTML and addresses backward compatibility issues of the HTML.</li>
+                                        <li>Supplies the needs of modern web applications</li>
+                                        <li>It was moved to Proposed Recommendation on September 16, 2014</li>
+                                    </p>
+
+                                    <h2><li>HTML5.1</li></h2>
+                                    <p>
+                                        <li>Fixed some issues that were left open in HTML5.</li>	
+                                        <li>It was moved to Proposed Recommendation on November 1, 2016</li>
+                                    </p>
+
+                                    <h2><li>HTML5.2</li></h2>
+                                    <p>
+                                            <li>It was moved to Proposed Recommendation on December 14, 2017</li>
+                                    </p>  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div>
+                    <button type="button" class="btn btn-danger btn-lg btn-block" data-toggle="collapse" data-target="#content3" style="margin: 5px; font-size 30px;"> HTML Document Structure </button>
+                    <div class="collapse" id="content3">
+                        <div class="well">
+                            <h1>HTML Document Structure</h1>
+                                 <p>
+                                    <h2><li>HTML VERSION INFORMATION</li></h2>
+                                    <p>
+                                        <li>A declaration of what version of HTML is used.</li>
+                                    </p>
+                                    <h2><li>HTML ELEMENT</li></h2>
+                                    <p>
+                                        <li>The main element that consists the Document head and body.</li>
+                                    </p>
+                                    <h2><li>DOCUMENT HEAD</li></h2>
+                                    <p>
+                                        <li>Part of the HTML Element that consists of HEAD Element and TITLE Element</li>
+                                        <h3><li>HEAD Element</li></h3>
+                                            <p>
+                                                <li>It contains information about the document like the title of the document</li>
+                                            </p>
+                                        <h3><li>TITLE Element</li></h3>
+                                            <p>
+                                                <li>Is used by authors to identify the contents of a document</li>
+                                            </p>     
+                                    </p>
+                                    <h2><li>DOCUMENT BODY</li></h2>
+                                    <p>
+                                        <li>Part of the HTML Element that consists the main content of the document.</li>
+                                        <h3><li>BODY Element</li></h3>
+                                            <p>
+                                                <li>It is the text, image, color found in the Document Body.</li>
+                                            </p>    
+                                        <h3><li>Element Identifiers</li></h3>
+                                            <p>
+                                                <li>These are used to declare elements to be easily distinguished.</li> <li>The two identifiers used in element identifying are "id" and "class"</li>  
+                                            </p> 
+                                        <h3><li>Grouping Elements</li></h3>
+                                            <p>
+                                                <li>These are used to put blocks of codes in one container.</li>
+                                                <li>Example for the grouping elements are the "div" and "span" identifiers</li>
+                                            </p>
+                                        <h3><li>Heading Elements</li></h3>
+                                            <p>
+                                                <li>It describes the topic of the section it introduces.</li>
+                                                <li>It is also used to distinguish what is the important and what is less important.</li>
+                                                <li>The identifiers for the heading elements are h1,h2,h3,h4,h5 and h6 where h1 is the most important and h6 is the less important</li>
+                                            </p>
+                                        <h3><li>ADDRESS Elements</li></h3>
+                                            <p>
+                                                <li>It is where the contact of the author is found.</li>
+                                                <li>It is always found in the last part of the bodt element.</li>
+
+                                            </p>
+                                    </p>                          
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
     </body>
 </html>
