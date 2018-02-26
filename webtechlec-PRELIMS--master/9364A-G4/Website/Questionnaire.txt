@@ -1,0 +1,24 @@
+Lagay niyo dito yung mga questionnaire na lalagay niyo quiz
+Example: 
+1.) What is the world wide web?
+Answer: b.
+2.) b.
+3.) c.
+4.) a.
+5.) a.
+6.) e. Delete
+7.) g. Trace
+8.) h. connect
+9.) f. Options
+10.) c. Post
+11.) a. Get
+12.) b. Head
+13.) d. Put
+14.) a.
+15.) c
+16.) b.
+17.) b 2XX
+18. d. 4XX
+19.) e 5XX
+20.) c 3XX
+21.) a 1XX
