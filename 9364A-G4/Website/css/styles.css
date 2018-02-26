@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: Oswald-Medium;
+    src: url('../fonts/Oswald-Medium.ttf');
+}
+
+@font-face {
+    font-family: Walkway-SemiBold;
+    src: url('../fonts/Walkway_SemiBold.ttf');
+}
 
 .navbar {
     margin-bottom: 0;
@@ -126,8 +135,63 @@ header{
 
 }
 
+h1{
+    font-family: Oswald-Medium;
+}
 
-    
+h2{
+    font-family: Oswald-Medium;
+}
 
+h3{
+    font-family: Oswald-Medium;
+}
+
+ul{
+    font-family: Walkway-SemiBold;
+}
+
+ul li{
+    font-family: Walkway-SemiBold;
+}
+
+ul li li{
+    font-family: Walkway-SemiBold;
+}
+
+ul li ul {
+    font-family: Walkway-SemiBold;
+}
+
+ul li ul li{
+    font-family: Walkway-SemiBold;
+}
     
+ol{
+    font-family: Walkway-SemiBold;
+}
+
+ol li {
+    font-family: Walkway-SemiBold;
+}
+
+ol li ul{
+    font-family: Walkway-SemiBold;
+}
+
+ol li ul li{
+    font-family: Walkway-SemiBold;
+}
+
+p{
+    font-family: Walkway-SemiBold;
+}
+
+p li {
+    font-family: Walkway-SemiBold;
+}
+    
+li {
+    font-family: Walkway-SemiBold;
+}
 
